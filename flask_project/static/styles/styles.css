@@ -1,5 +1,11 @@
 @import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css");
 
+
+.pastabilities {
+    background-color: yellow;
+    border: dotted 4px green;
+}
+
 .jumbotron{
     background-color: #63954b;
 
@@ -15,4 +21,16 @@
     margin-right: auto;
     width: 25%;
 
+}
+
+
+.info{
+    color: black;
+}
+
+.listout {
+    padding: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
 }

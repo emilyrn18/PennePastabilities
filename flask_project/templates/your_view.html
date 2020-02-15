@@ -23,12 +23,19 @@
 		</span>
 
 	</div>
-	<br><br>
-	<div>
+	<br>
+	<div class="listout">
 		{% for recipe in your_list %}
-		<p><a href={{ recipe["recipe"]["url"] }}>{{ recipe["recipe"]["label"] }}</a></p>
+		<div class="pastabilities">
+			<br><br>
+			<p><a class="info" href={{ recipe["recipe"]["url"] }}><img src={{ recipe["recipe"]["image"] }}></img> <br>
+					{{ recipe["recipe"]["label"] }} </a></p>
+
+		</div>
+		<br><br><br>
 		{% endfor %}
 	</div>
+
 
 </body>
 

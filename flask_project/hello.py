@@ -4,7 +4,7 @@ from flask import session, request
 from flask import render_template
 
 
-app = Flask('hello')
+app = Flask('penne')
 @app.route('/')
 def get_recipes():
     params = ["penne"]
