@@ -1,7 +1,45 @@
-{% for recipe in your_list %}
-	<body>
-		<!--<p>{{ recipe["recipe"]["label"] }} </p>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel='stylesheet' type="text/css" href="..\static\styles\styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+</head>
+
+
+
+<body class="jumbotron text-center">
+
+	<div class="penne input-group">
+
+		<input class="form-control" type="text" placeholder="Recipient's username" aria-label="Recipient's username"
+			aria-describedby="basic-addon2">
+		<span class="input-group-btn">
+			<button type="button" class="btn btn-warning form-control">Find Items</button>
+		</span>
+
+	</div>
+	<br><br>
+	<div>
+		{% for recipe in your_list %}
+		<p><a href={{ recipe["recipe"]["url"] }}>{{ recipe["recipe"]["label"] }}</a></p>
+		{% endfor %}
+	</div>
+
+</body>
+
+
+</html>
+
+<!-- {% for recipe in your_list %}
+
+<body>
+	<!--<p>{{ recipe["recipe"]["label"] }} </p>
     	<p>{{ recipe["recipe"]["url"] }} </p>-->
-    	<p><a href={{ recipe["recipe"]["url"] }}>{{ recipe["recipe"]["label"] }}</a></p>
-    </body>
-  {% endfor %}
+<!-- <p><a href={{ recipe["recipe"]["url"] }}>{{ recipe["recipe"]["label"] }}</a></p>
+</body>
+{% endfor %} -->
