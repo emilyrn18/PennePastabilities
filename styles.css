@@ -9,3 +9,10 @@
     color: black;
     border: dotted 4px black;
 }
+
+.penne {
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+
+}
