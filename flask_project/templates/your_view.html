@@ -1,0 +1,7 @@
+{% for recipe in your_list %}
+	<body>
+		<!--<p>{{ recipe["recipe"]["label"] }} </p>
+    	<p>{{ recipe["recipe"]["url"] }} </p>-->
+    	<p><a href={{ recipe["recipe"]["url"] }}>{{ recipe["recipe"]["label"] }}</a></p>
+    </body>
+  {% endfor %}
