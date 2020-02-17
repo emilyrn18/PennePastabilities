@@ -7,7 +7,7 @@ from flask import render_template
 app = Flask('penne')
 @app.route('/')
 def get_recipes():
-    params = ["penne"]
+    params = ["panini"]
     app_id = "8a7451e2"
     app_key = "842fccb336c3a63726031f666fcc69ba"
 

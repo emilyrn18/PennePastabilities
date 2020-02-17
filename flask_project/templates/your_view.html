@@ -6,7 +6,7 @@
 	<link rel='stylesheet' type="text/css" href="..\static\styles\styles.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
+	<script src="https://developer.edamam.com/attribution/badge.js"></script>
 
 </head>
 
@@ -14,10 +14,12 @@
 
 <body class="jumbotron text-center">
 
+	<h2 class="pastabilities">Penne Pastabilities</h2>
+	<br><br>
 	<div class="penne input-group">
 
-		<input name="data" class=" form-control" type="text" placeholder="Ingredient"
-			aria-label="Recipient's username" aria-describedby="basic-addon2">
+		<input name="data" class=" form-control" type="text" placeholder="Ingredient" aria-label="Recipient's username"
+			aria-describedby="basic-addon2">
 		<span class="input-group-btn">
 			<button type="button" class="btn btn-warning form-control">Find
 				Items</button>
@@ -37,7 +39,7 @@
 		<br><br><br>
 		{% endfor %}
 	</div>
-
+	<div id="edamam-badge" data-color="white"></div>
 
 </body>
 
